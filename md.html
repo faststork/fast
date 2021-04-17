@@ -1,0 +1,833 @@
+﻿<!DOCTYPE html1>
+<html1 lang="ru">
+  <head>
+    <title>Fast Stork-Макдоналдс</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- ======== корзина ============================== -->
+
+<link rel="stylesheet" type="text/css" href="themes/theme1.css" />
+	<link rel="stylesheet" type="text/css" href="wicart.css" />
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" ></script>
+	<!-- WI-JQ-HEADER -->
+	<link rel="stylesheet" href="validationEngine.jquery.css" type="text/css"/>
+	<script src="jquery.validationEngine-ru.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+	<script src="wicart.js"  type="text/javascript" ></script>
+	<!-- WI-HEADER -->
+
+
+<!-- =============================================== -->
+
+  </head>
+  <body>
+  
+  <script>
+var priceList = {
+	"1" : {"id" : "1", "subid" : {}, "name" : "Роял Барбекю", "price" : "165"},
+	"2" : {"id" : "2", "subid" : {}, "name" : "Биг Тейсти Три Сыра", "price" : "279"},
+	"3" : {"id" : "3", "subid" : {}, "name" : "Двойной Биг Тейсти", "price" : "325"},
+	"4" : {"id" : "4", "subid" : {}, "name" : "Биг Тейсти", "price" : "249"}
+	};
+</script>
+  
+  	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Fast Stork<small>Быстрая доставка</small></a>
+		  
+		   <span class="ftco-counter" id="section-counter" >		
+		            <div class="block-18 text-center">
+		              <div class="text">
+		              	<div href="#"  class="icon" onclick="cart.showWinow('bcontainer', 1)" style='cursor: pointer;'>
+						<div class="icon">
+						<span class="icon icon-shopping_cart" style='font-size: 47px;'></span></div>
+
+		              
+		              	</div>
+		              </div>
+		            </div>
+
+           </span>
+		   
+		   <span class="ftco-counter" id="section-counter" style='margin-left: 10px;' >	
+           <div class="cart" style='background: #0CFF00;'>		   
+           <div id="basketwidjet" style='font-size: 20px; color:#fff;'></div>
+		   </div>
+           </span>
+		   
+		   <span class="ftco-counter" id="section-counter" style='margin-left: 10;' >		
+		    <div class="cart">
+<div style="text-align: center"><a href="#" onclick="cart.clearBasket()">Очистить</a></div>
+</div>        
+           </span>
+		  
+
+
+
+		  
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span>
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="index.html" class="nav-link">Главное</a></li>
+            </li-->
+			  <li class="nav-item"><a href="." class="nav-link">Все магазины</a></li>
+			  <li class="nav-item"><a href="#"  onclick="cart.showWinow('bcontainer', 1)" class="nav-link">Карзина</a></li>
+			  <li class="nav-item"><a href="." class="nav-link">Акции</a></li>
+			  
+	          <!--li class="nav-item"><a href="contact.html1" class="nav-link">Контакиы</a></li-->
+	          <!--li class="nav-item cart"><a href="cart.html1" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>0</small></span></a></li-->
+	        </ul>
+	      </div>
+		  </div>
+	  </nav>
+    <!-- END nav -->
+<style>
+   .imgg{width:100%;height: avto;border-radius: 10px;box-shadow: 0 0 10px rgba(255,255,255,0.5);}
+   .imgg:hover{width:100%;height: avto;border-radius: 10px;box-shadow: 0 0 15px rgba(255,255,255,0.5);}
+   .si {color: #fff; font-size:25px; }
+   .nad {position: relative;}
+   .nad2 {margin-top: 5px; position: relative; align: right;}
+   a {color: #ff6a00;}
+   a:hover {color: #0cff00;}
+   
+   
+   .button {
+   width: avto; 
+   height: auto; 
+   margen-top: 20px; 
+   padding: 5px 35px 5px 35px; 
+   background: none; 
+   color: #ff6a00;
+   border: 1px solid;
+   border-radius: 5px;
+  
+   position: relative;
+   }
+   .button:hover {
+   width: avto; 
+   height: auto; 
+   margen-top: 20px; 
+   padding:  5px 35px 5px 35px; 
+   background: none; 
+   color: #0cff00;
+   border: 1px solid;
+   border-radius: 5px;
+   }
+  .pricing-entry .img {
+  box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    width: 80px;
+    height:80px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%; }
+	
+	#info {margin-top: -70px; margin-left: 10px; text-align: right;}
+								.info {
+								cursor: pointer;
+								position: absolute;
+								line-height: 1.2;
+								padding: 5px;
+								text-align: left;
+								color: #000;
+								margin-top: -74px;
+								width: 60%;
+                                height: 50px;
+								border-radius: 0px 30px 0px 10px;
+                                background-color: #06ff00;
+								z-index: 1;
+								}
+								.info:hover {
+								cursor: pointer;
+								position: absolute;
+								line-height: 1.2;
+								padding: 5px;
+								text-align: left;
+								color: #fff;
+								margin-top: -74px;
+								width: 60%;
+                                height: 50px;
+								border-radius: 0px 30px 0px 10px;
+                                background-color: #ff6a00;
+								z-index: 1;
+								}
+								.info2 {
+								cursor: pointer;
+								
+								line-height: 1.2;
+								padding: 5px;
+								text-align: center;
+								color: #000;
+								margin-top: -74px;
+								margin-right: -10px;
+								width: 70px;
+                                height: 70px;
+								border-radius: 50%;
+                                background-color: #06ff00;
+								z-index: 1;
+								}
+
+
+p {color: #000; font-size: 10px;}
+
+.box {
+				box-shadow: 0 0 10px rgba(255,255,255,0.5);
+				                
+								text-align: left;
+								color: #000;
+								margin: 0px;
+								width: 100%;
+                                height: auto;
+								border-radius: 10px 10px 10px 10px;
+                                background-color: #fff;
+								z-index: 0;
+				}
+				
+				.imge {
+				border-radius: 10px 10px 10px 10px;
+				width: 90px;
+                height: 90px;}
+				
+				.SUMM {width: 150px; font-size: 20px; color: #ff6a00;padding: 0 10px 0 0;}
+				
+				.as {cursor: pointer;color: #ff6a00; border: 1px solid #ff6a00;border-radius:5px;padding:5px;}
+				.as:hover {cursor: pointer;color: #0cff00; border: 1px solid #0cff00;border-radius:5px;padding:5px;}
+   </style>
+
+    <section class="ftco-section">
+		     <img src="images/MD2.jpg" style='width:100%; higher:100px;'   data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class=''></a>
+<br>
+<div class="container">
+		     <h2>Макдоналдс</h2>
+			 <h4 style='color:#ff6a00;'>Минимальный заказ 900&#8381;</h4>
+		  </div> 
+		     							
+		
+    </section>
+		<section class="ftco-menu">
+    	<div class="container">
+    		<div class="row">
+	    		
+		          <div class="col-md-12 nav-link-wrap mb-5">
+		            <div class="nav ftco-animate nav-pills justify-content-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+		              
+					  <a  title='Рестороны' class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">
+					 <div><img src="images/boor.png" style='width:55px; height: 55px;margin-left: -22px;margin-top: -14px;'>
+					 <div style='font-size:12px;margin-left: -15px; color:#fff;margin-top: -3px;'><b>Бургеры</b></div>
+					</div></a>
+					  
+		            <a  title='Рестороны' class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="true">
+					 <div><img src="images/boor.png" style='width:55px; height: 55px;margin-left: -22px;margin-top: -14px;'>
+					 <div style='font-size:12px;margin-left: -15px; color:#fff;margin-top: -3px;'><b>Роллы</b></div>
+					</div></a>
+		            
+					<a  title='Рестороны' class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="true">
+					 <div><img src="images/boor.png" style='width:55px; height: 55px;margin-left: -22px;margin-top: -14px;'>
+					 <div style='font-size:12px;margin-left: -15px; color:#fff;margin-top: -3px;'><b>Чикен</b></div>
+					</div></a>
+					
+					<a  title='Рестороны' class="nav-link" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="true">
+					 <div><img src="images/boor.png" style='width:55px; height: 55px;margin-left: -22px;margin-top: -14px;'>
+					 <div style='font-size:12px;margin-left: -15px; color:#fff;margin-top: -3px;'><b>Картофель</b></div>
+					</div></a>
+					
+					<a  title='Рестороны' class="nav-link" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab" aria-controls="v-pills-5" aria-selected="true">
+					 <div><img src="images/boor.png" style='width:55px; height: 55px;margin-left: -22px;margin-top: -14px;'>
+					 <div style='font-size:12px;margin-left: -15px; color:#fff;margin-top: -3px;'><b>Напитки</b></div>
+					</div></a>
+					
+					<a  title='Рестороны' class="nav-link" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-6" role="tab" aria-controls="v-pills-6" aria-selected="true">
+					 <div><img src="images/boor.png" style='width:55px; height: 55px;margin-left: -22px;margin-top: -14px;'>
+					 <div style='font-size:12px;margin-left: -15px; color:#fff;margin-top: -3px;'><b>Десерты</b></div>
+					</div></a>
+					
+					
+					</div>
+		          </div>
+		          <div class="col-md-12 d-flex align-items-center">
+		            
+		            <div class="tab-content ftco-animate" id="v-pills-tabContent">
+
+		              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+		              <div class="row">		  
+				
+
+				
+        	<div class="col-md-6 mb-5 pb-3">
+        		<h3 class="mb-5 heading-pricing ftco-animate">БУРГЕРЫ ГОВЯЖЬИ</h3>
+				
+                <div class="pricing-entry d-flex ftco-animate box">
+				<img src="images/new.png" style='width:55px; height: 55px; margin-left: -15px;margin-button: 10px; z-index:1;position: absolute;'>
+				
+        			<div class="img"><img src="images/Б1.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;' id="wicartprice_1">Роял Барбекю</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Роял Барбекю – сочный бифштекс из 100% говядины, ароматный соус Барбекю, сыр и овощи.</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 165 &#8381;</b><br>
+					<a id="wicartbutton_1" onclick="cart.addToCart(this, '1', priceList['1'])" class='as'>Заказать</a></p>
+        		</div>
+				<br>
+				<div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				<img src="images/new.png" style='width:55px; height: 55px; margin-left: -15px;margin-button: 10px; z-index:1;position: absolute;'>
+				
+        			<div class="img"><img src="images/Б2.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;' id="wicartprice_2">Биг Тейсти Три Сыра</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Бургер с тремя видами сыра: Эмменталь, Гауда, сырный соус Чеддер, с большим сочным бифштексом, знаменитым соусом с дымком и свежими овощами. </p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 279 &#8381;</b><br>
+					<a id="wicartbutton_2" onclick="cart.addToCart(this, '2', priceList['2'])" class='as'>Заказать</a></p>
+        		</div>
+				<br>
+				<div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				
+        			<div class="img"><img src="images/B3.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;' id="wicartprice_3">Двойной Биг Тейсти</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Тот самый Бургер с двумя большими рублеными бифштексами из 100% говядины на булочке с кунжутом. Особенный вкус сандвичу придают соус «Биг Тейсти» с дымком, 3 кусочка сыра «эмменталь», ломтик помидора, свежий салат и лук.</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 325 &#8381;</b><br>
+					<a id="wicartbutton_3" onclick="cart.addToCart(this, '3', priceList['3'])" class='as'>Заказать</a></p>
+        		</div>
+				<br>
+				<div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				
+        			<div class="img"><img src="images/b4.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;' id="wicartprice_3">Биг Тейсти</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Это сандвич с большим, рубленым бифштексом из 100% говядины на большой булочке с кунжутом. Особенный вкус сандвичу придают три кусочка сыра «эмменталь», два ломтика помидора, свежий салат, лук и соус "Биг Тейсти" с дымком.
+							</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 249 &#8381;</b><br>
+					<a id="wicartbutton_4" onclick="cart.addToCart(this, '4', priceList['4'])" class='as'>Заказать</a></p>
+        		</div>
+				
+				
+				
+        		</div>
+				
+				<div class="col-md-6 mb-5 pb-3">
+        		<div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				
+        			<div class="img"><img src="images/b6.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;'>Двойной Биг Мак</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Очень большой бургер с четырьмя рублеными бифштексами из 100% говядины на булочке с кунжутом, поджаренной в тостере, маринованными огурчиками, луком, свежим салатом «Айсберг», ломтиком плавленого сыра «Чеддер» и специальным соусом «Биг Мак».
+							</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 199 &#8381;</b><br><a href="#" class='as'>Заказать</a></p>
+        		</div>
+				<br>
+				
+				<div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				
+        			<div class="img"><img src="images/b7.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;'>Биг Мак</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Большой бургер с двумя рублеными бифштексами из 100% говядины на булочке с кунжутом, поджаренной в тостере, маринованными огурчиками, луком, свежим салатом «Айсберг», ломтиком плавленого сыра «Чеддер» и специальным соусом «Биг Мак».
+							</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 135 &#8381;</b><br><a href="#" class='as'>Заказать</a></p>
+        		</div>
+				
+				<br>
+				<div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				
+        			<div class="img"><img src="images/b8.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;'>Роял Де Люкс</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Сочный бифштекс из натуральной говядины, приготовленный на гриле, карамелизованная булочка с кунжутом, два ломтика сыра «Чеддер», свежий салат, кусочек помидора и лук, маринованные огурчики, кетчуп, горчица и специальный соус «Мак Чикен».
+							</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 165 &#8381;</b><br><a href="#" class='as'>Заказать</a></p>
+        		</div>
+				
+				<br>
+				<div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				
+        			<div class="img"><img src="images/b9.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;'>Двойной Роял</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Два сочных бифштекса из натуральной говядины, приготовленных на гриле, карамелизованная булочка с кунжутом, два ломтика сыра «Чеддер», лук, маринованные огурчики, кетчуп и горчица.
+						</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 219 &#8381;</b><br><a href="#" class='as'>Заказать</a></p>
+        		</div>
+					
+				<br>
+				<div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				
+        			<div class="img"><img src="images/b10.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;'>Роял</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Сочный бифштекс из натуральной говядины, приготовленный на гриле, карамелизованная булочка с кунжутом, два ломтика сыра «Чеддер», кетчуп, горчица, свежий лук и маринованные огурчики.
+					</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 145 &#8381;</b><br><a href="#" class='as'>Заказать</a></p>
+        		</div>
+				
+				
+				
+        	</div>	
+
+        	<div class="col-md-6 mb-5 pb-3">
+        		<h3 class="mb-5 heading-pricing ftco-animate">БУРГЕРЫ ЧИКЕН</h3>
+				
+				<div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				
+        			<div class="img"><img src="images/ch1.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;'>Чикен Премьер</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Вкуснейшее рубленое куриное филе в хрустящей панировке, сыр "Чеддер", ароматный бекон, ломтик помидора, свежий салат, специальный дижонский соус и, конечно, та самая булочка с кунжутом.
+							</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 139 &#8381;</b><br><a href="#" class='as'>Заказать</a></p>
+        		</div>
+				<br>
+				
+				<div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				
+        			<div class="img"><img src="images/ch2.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;'>Макчикен</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Булочка карамелизированная с семенами кунжута, обжаренная куриная котлета из сочного куриного мяса, специальный соус «МакЧикен» и салат айсберг.
+							</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 100 &#8381;</b><br><a href="#" class='as'>Заказать</a></p>
+        		</div>
+				<br>
+				
+				<div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				
+        			<div class="img"><img src="images/ch3.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;'>Чикенбургер</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Обжаренная куриная котлета из сочного куриного мяса, панированная в сухарях, которая подается на карамелизованной булочке, заправленной свежим салатом и специальным соусом «МакЧикен».
+							</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 50 &#8381;</b><br><a href="#" class='as'>Заказать</a></p>
+        		</div>
+				<br>
+				<h3 class="mb-5 heading-pricing ftco-animate">БУРГЕРЫ Фиш</h3>
+				<br>
+				<div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				
+        			<div class="img"><img src="images/ch4.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;'>Двойной Филе-О-Фиш</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Два кусочка филе рыбы (семейство тресковых), которые подаются на пышной пропаренной булочке с кусочком сыра «Чеддер». Сандвич заправлен соусом «Тар-Тар».
+							</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 169 &#8381;</b><br><a href="#" class='as'>Заказать</a></p>
+        		</div>
+				<br>
+				
+				<div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				
+        			<div class="img"><img src="images/ch5.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;'>Филе-О-Фиш</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Филе хорошо прожаренной рыбы (семейства тресковых), которое подается на пышной пропаренной булочке с половинкой кусочка сыра «Чеддер», заправленной специальным соусом «Тар-Тар».
+							</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 153 &#8381;</b><br><a href="#" class='as'>Заказать</a></p>
+        		</div>
+				
+        		
+        	</div>
+				
+
+        	<div class="col-md-6 mb-5 pb-3">
+        		<h3 class="mb-5 heading-pricing ftco-animate">БУРГЕРЫ ЧИЗ</h3>
+        	
+                  <div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				
+        			<div class="img"><img src="images/chi1.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;'>Тройной Чизбургер</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Три рубленных бифштекса из натуральной говядины на карамелизованной булочке, с тремя ломтиками сыра «Чеддер», кетчупом, горчицей, луком и маринованными огурчиками.
+							</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 169 &#8381;</b><br><a href="#" class='as'>Заказать</a></p>
+        		</div>
+				<br>
+				<div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				
+        			<div class="img"><img src="images/chi2.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;'>Двойной Чизбургер</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Два рубленых бифштекса из натуральной говядины на карамелизованной булочке, с двумя ломтиками сыра «Чеддер», кетчупом, горчицей, луком и маринованными огурчиками
+							</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 125 &#8381;</b><br><a href="#" class='as'>Заказать</a></p>
+        		</div>
+				<br>
+				<div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				
+        			<div class="img"><img src="images/chi3.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;'>Чизбургер</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Рубленый бифштекс из натуральной говядины на карамелизованной булочке, с ломтиком сыра «Чеддер», кетчупом, горчицей, луком и маринованными огурчиками.
+							</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 50 &#8381;</b><br><a href="#" class='as'>Заказать</a></p>
+        		</div>
+				<br>
+				<div class="pricing-entry d-flex ftco-animate box" style='margen-top: 110px;'>
+				
+        			<div class="img"><img src="images/chi3.png" class='imge'></div>
+        			<div class="desc pl-1">
+	        			<div class="d-flex text align-items-center">
+	        				<span style='color: #ff6a00;'>Гамбургер</span>	
+	        			</div>
+	        			<div class="d-block" style='word-wrap: break-word; width: 90%;line-height: 1.2;'>
+	        				<p>Рубленый бифштекс из 100% говядины, приправленный солью и перцем на гриле, карамелизованная булочка с кетчупом, горчицей, луком и маринованным огурчиком.
+							</p>
+	        			</div>
+	        		</div>
+					<b><p class="SUMM" align="right"> 48 &#8381;</b><br><a href="#" class='as'>Заказать</a></p>
+        		</div>
+			
+        	</div>
+
+
+        </div>
+		
+		</div>
+		             
+
+		              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+		                <div class="row">
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/drink-1.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Лимонный сок</a></h3>
+		              					<p>Освежающий компот лимонный – кладезь витамина С, который великолепно укрепляет иммунную систему, повышает аппетит</p>
+		              					<p class="price"><span>80 &#8381;</span></p>
+		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Заказать</a></p>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/bimage_8.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Компот</a></h3>
+		              					<p>Освежающий компот – кладезь витамина С, который великолепно укрепляет иммунную систему, повышает аппетит</p>
+		              					<p class="price"><span>80 &#8381;</span></p>
+		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Заказать</a></p>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/drink-3.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Содовая</a></h3>
+		              					<p>Вода содовая – одна из разновидностей газировки, которая изготавливается путем введения соды и двуокиси углерода</p>
+		              					<p class="price"><span>80 &#8381;</span></p>
+		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Заказать</a></p>
+		              				</div>
+		              			</div>
+		              		</div>
+		              	</div>
+		              </div>
+
+		              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+		                <div class="row">
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/dessert-1.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Зефир с шоколадом</a></h3>
+		              					<p>Зефир с ванилью в молочном бельгийском шоколаде порадует любителей лакомств.<br><br></p>
+		              					<p class="price"><span>80 &#8381;</span></p>
+		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Заказать</a></p>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/dessert-2.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Блинный торт</a></h3>
+		              					<p>Масленичная неделя подходит к концу и я наконец тоже могу поделиться с вами рецептом блинного торта.</p>
+		              					<p class="price"><span>80 &#8381;</span></p>
+		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Заказать</a></p>
+		              				</div>
+		              			</div>
+		              		</div>
+		              		<div class="col-md-4 text-center">
+		              			<div class="menu-wrap">
+		              				<a href="#" class="menu-img img mb-4" style="background-image: url(images/dessert-3.jpg);"></a>
+		              				<div class="text">
+		              					<h3><a href="#">Фруктовый коржик</a></h3>
+		              					<p>Порой нам не хватает доли секунды, что бы побаловать себя и своих близких. <br><br></p>
+		              					<p class="price"><span>80 &#8381;</span></p>
+		              					<p><a href="#" class="btn btn-primary btn-outline-primary">Заказать</a></p>
+		              				</div>
+		              			</div>
+		              		</div>
+		              	</div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		    
+    	</div>
+    </section>
+
+    <footer class="ftco-footer ftco-section img">
+    	<div class="overlay"></div>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-5">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">О нас</h2>
+              <p>Tatni. Каждый прием еды может быть не похожим на предыдущий, но оставаться таким же вкусным. Супы, салаты, мясные и рыбные блюда, гарниры и выпечка на любой вкус. Мы лучшие! Поэтому нам доверяют корпоративное питание крупные компани . Много клиентов работают с нами на постоянной основе</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5 mb-md-5">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Бизнес ланч</h2>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Яркая и солнечная пицца с мексиканским мотивом и русским сюрпризом.
+</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> Апрель 15, 2021</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Яркая и солнечная пицца с мексиканским мотивом и русским сюрпризом.
+</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> Апрель 15, 2021</a></div>
+                  </div>
+                </div>
+              </div>
+			  <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Яркая и солнечная пицца с мексиканским мотивом и русским сюрпризом.
+</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> Апрель 15, 2021</a></div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-5 mb-md-5">
+             <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Сервис</h2>
+              <!--ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Cooked</a></li>
+                <li><a href="#" class="py-2 d-block">Deliver</a></li>
+                <li><a href="#" class="py-2 d-block">Quality Foods</a></li>
+                <li><a href="#" class="py-2 d-block">Mixed</a></li>
+              </ul-->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-5">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Наш адрес</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">М.О. г. Щелково ул. Заводская д.22</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+7 999 800 4432</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@tatnifood.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Авторские права &copy;<script>document.write(new Date().getFullYear());</script> Все права защищены |<a href="#" target="_blank"> Tatni Food</a> <i class="icon-heart" aria-hidden="true"></i> Люблю покушать
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  
+
+<!---Форма для магазина-------------------------------->
+<div id="order" class="popup">
+<a href="#" onclick="cart.closeWindow('order', 0)" style="float:right">[X]</a>
+<h4>Введите ваши контактные данные</h4>
+
+<form id="formToSend">
+<input id="fio" type="text" placeholder="Ваши Имя"  class="validate[required]" />
+<input id="city" type="text" placeholder="Адрес"  class="validate[required]"/>
+<input id="phone" type="text" placeholder="Контактный телефон" class="validate[required]"/>
+<br>
+<textarea id="question" placeholder="Примечание"></textarea>
+<br>
+<b>Доставка: от 30 минут</b>
+<br>
+<input type="checkbox" value="V"> Оплата картой <input type="checkbox" value="V"> Наличными
+</form>
+<button onclick="cart.sendOrder('formToSend,overflw,bsum');" href="#">Отправить заказ</button>
+</div>
+<!----------------------------------------------------->
+
+
+
+
+  
+  </body>
+</html>
+
+<script>
+var cart;
+var config;
+var wiNumInputPrefID;
+/* WI-GLOBAL-VARS */
+$(document).ready(function(){
+	var contactForm = $('#formToSend');	  
+    	cart = new WICard("cart");
+    	config = {'clearAfterSend':true, 'showAfterAdd':false, 'validate':contactForm};
+    
+    	cart.init("basketwidjet", config);
+    /* WI-MODULES */
+    
+    
+});	
+document.addEventListener('visibilitychange', function(e) {
+cart.init("basketwidjet", config);
+}, false);
+document.addEventListener('visibilitychange', function(e) {
+cart.init("basketwidjet2", config);
+}, false);
+</script>
