@@ -1,0 +1,60 @@
+﻿<!-- ======== корзина ============================== -->
+
+<link rel="stylesheet" type="text/css" href="themes/theme1.css" />
+	<link rel="stylesheet" type="text/css" href="wicart.css" />
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" ></script>
+	<!-- WI-JQ-HEADER -->
+	<link rel="stylesheet" href="validationEngine.jquery.css" type="text/css"/>
+	<script src="jquery.validationEngine-ru.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+	<script src="wicart.js"  type="text/javascript" ></script>
+	<!-- WI-HEADER -->
+	<style>
+	.v {border:1px solid #999; border-radius: 5px;padding: 10px;margin-bottom: 10px; width: 340px;}
+	</style>
+
+<!-- =============================================== -->
+
+
+<!---Форма для магазина-------------------------------->
+<div id="order" class="popup">
+<a href="#" onclick="cart.closeWindow('order', 0)" style="float:right">[X]</a>
+<h4>Введите ваши контактные данные</h4>
+
+<form id="formToSend">
+<input id="fio" type="text" placeholder="Ваши фамилия и имя"  class="validate[required]" />
+<input id="city" type="text" placeholder="Город"  class="validate[required]"/>
+<input id="phone" type="text" placeholder="Контактный телефон" class="validate[required]"/>
+<input id="email" type="text" placeholder="Электронная почта" class="validate[required]" />
+<br>
+<textarea id="question" placeholder="Адрес"></textarea>
+<br>
+<b>Доставка:</b>
+<br>
+от 30 минут
+<br>
+<input type="checkbox" value="V"> Оплата картой
+</form>
+<button onclick="cart.sendOrder('formToSend,overflw,bsum');" href="#">Отправить заказ</button>
+</div>
+<!----------------------------------------------------->
+
+<script>
+var cart;
+var config;
+var wiNumInputPrefID;
+/* WI-GLOBAL-VARS */
+$(document).ready(function(){
+	var contactForm = $('#formToSend');	  
+    	cart = new WICard("cart");
+    	config = {'clearAfterSend':true, 'showAfterAdd':false, 'validate':contactForm};
+    
+    	cart.init("basketwidjet", config);
+    /* WI-MODULES */
+    
+    
+});	
+document.addEventListener('visibilitychange', function(e) {
+cart.init("basketwidjet", config);
+}, false);
+</script>
